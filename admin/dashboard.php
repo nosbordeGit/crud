@@ -2,7 +2,7 @@
 session_start();
 include '../templates/template.php';
 
-$title = "Home";
+$title = "Dashboard";
 ob_start();
 
 $_SESSION['username'] = 'admin';
