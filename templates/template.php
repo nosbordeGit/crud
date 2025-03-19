@@ -1,5 +1,5 @@
 <?php
-
+// templates/template.php
 function startBuffer() {
     ob_start();
 }
