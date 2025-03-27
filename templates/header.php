@@ -22,14 +22,14 @@
             <ul class="navbar-nav ms-auto ms-auto mb-2 mb-lg-0">
                 <?php if (isset($_SESSION['username'])): ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link" href="../admin/logout.php">Logout</a>
                     </li>
                 <?php else: ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="../admin/login.php">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="../admin/register.php">Register</a>
                     </li>                    
                 <?php endif; ?>
             </ul>

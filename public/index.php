@@ -1,16 +1,18 @@
 <?php
-//public/index.php
+// public/index.php
+$title = "Home";
 session_start();
 include '../templates/template.php';
-
-$title = "Home";
+include '../config/config.php';
 ob_start();
-
-$_SESSION['username'] = 'admin';
 ?>
-
-<h2 class="text-center mt-5">Bem-vindo, <?php echo $_SESSION['username']; ?>!</h2>
-<p class="text-center">Pagina dinamica em PHP</p>
+<?php if ($conn = dbConnect()) : ?>
+    <div class="container-fluid">
+        <h1>Home</h1>
+    </div>
+<?php else : ?>
+    <h1>Erro ao Conectar ao Banco de Dados!</h1>
+<?php endif; ?>
 
 <?php
 $content = ob_get_clean();

@@ -2,7 +2,7 @@
 //config/config.php
 // Configurações do Banco de Dados (MySQLi)
 define('DB_HOST', 'mysql');  // Nome do serviço do Docker Compose
-define('DB_NAME', 'devweb');
+define('DB_NAME', 'cadsystem');
 define('DB_USER', 'root');
 define('DB_PASS', 'password');  // Certifique-se de que está correto
 
